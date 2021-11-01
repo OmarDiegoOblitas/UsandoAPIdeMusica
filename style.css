@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+/*Main*/
+
+.main{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 1px 1px 2px black;
+    padding: 2rem;
+    min-height: 50vh;
+}
+/*Header*/
+header{
+    padding: 5rem;
+    background-color: black;
+    background-image: url('img/music.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    gap: .4rem;
+}
+
+.search {
+    flex-grow: 1;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+/*Content*/
+
+.content {
+    padding-top: 2rem;
+}
+
+.songs {
+    padding: 0;
+    list-style-type: none;
+}
+
+.song {
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    transition: background-color .3s ease-in-out;
+}
+.song:nth-child(even) {
+    background-color: lightgray;
+}
+.song:hover{
+    background-color: gray;
+    color: white;
+}
+.show {
+    background-color: goldenrod;
+    border:none;
+    
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.lyric {
+    font-size: 1.5rem;
+}
+/*Main*/
